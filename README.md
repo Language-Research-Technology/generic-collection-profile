@@ -1,2 +1,2 @@
-# hdrtraining-profile
-RO-Crate Profile specific to HDR Training materials.
+# general-purpose-collection-profile
+RO-Crate Profile for general purpose collections and not specific to a particular domain.
