@@ -162,7 +162,7 @@ The same relationship applies for \`hasPart\` and \`isPartOf\` at the Object and
 
 Depending on the data, using one term over another may be preferable when creating the hierarchical relationship. For example, if you are describing multiple files in a spreadsheet, it is easier to use \`isPartOf\` at the File level referencing the Object it belongs to, rather than listing all the \`hasPart\` entries at the Object level.
 
-The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
+<!-- The following diagram shows how these relationships are encoded in a single "bundled" RO-Crate.
 
 ![Self-contained collection crate with all resources](media/bundled-crate.svg)
 
@@ -172,7 +172,7 @@ The next diagram shows how distributed crates (with one RO-Crate per Object and 
 
 Which linking strategy is used is an implementation choice for
 repository developers.
-
+-->
 <br>
 
 ## When to choose collection-as-crate ("bundled") vs collection-in-multiple-crates ("distributed")
@@ -852,4 +852,3 @@ Instances of this type MAY be present in the crate.
 | <a id="#prop_temporalCoverage_Dataset_#prop_temporalCoverage_Dataset"></a>temporalCoverage[?](http://schema.org/temporalCoverage) | The range of years of creation for items in this dataset using a slash, e.g. 1900/1945. If there are sub-collections with different coverages put this on the sub-collections not the top-level. | <a href="##class_Dataset">Dataset</a> |
 | <a id="#prop_temporalCoverage_RepositoryObject_#prop_temporalCoverage_RepositoryObject"></a>temporalCoverage[?](http://schema.org/temporalCoverage) | The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in [ISO 8601 time interval format](https://en.wikipedia.org/wiki/ISO_8601#Time_intervals). In the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written "2011/2012"). Other forms of content, e.g. ScholarlyArticle, Book, TVSeries or TVEpisode, may indicate their temporalCoverage in broader terms - textually or via well-known URL. Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via "1939/1945". Open-ended date ranges can be written with ".." in place of the end date. For example, "2015-11/.." indicates a range beginning in November 2015 and with no specified final date. This is tentative and might be updated in future when ISO 8601 is officially updated. | <a href="##class_RepositoryObject">RepositoryObject</a> |
 | <a id="#prop_usageInfo_Dataset_#prop_usageInfo_Dataset"></a>usageInfo[?](http://schema.org/usageInfo) | Additional information on licensing options for using the data, e.g. 'Contact the Data Steward to discuss license terms'. | <a href="##class_Dataset">Dataset</a> |
-
